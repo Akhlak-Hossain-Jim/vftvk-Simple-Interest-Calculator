@@ -1,4 +1,35 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
+h1{
+    color:grey;
+    font-family:verdana;
+    text-align: center;
+}
 
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+}
+footer {
+    color: gray;
+}
+footer a {
+    color: black;
+    font-weight: 600;
+}
 
+.inter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.butres {
+    margin-left: 10px;
+}
