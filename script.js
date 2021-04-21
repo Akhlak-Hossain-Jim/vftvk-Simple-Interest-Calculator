@@ -4,13 +4,13 @@ function compute() {
   var years = document.getElementById("years").value;
 
   if (principal == "") {
-    alert("Please enter the name");
+    alert("Please enter the principal");
     username.focus();
     return false;
   }
 
   if (rate == 0) {
-    alert("Please enter the name");
+    alert("Please enter the rate");
     username.focus();
     return false;
   } else {
