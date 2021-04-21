@@ -1,16 +1,59 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+  <head>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>SIMPLE INTEREST CALCULATOR</title>
+  </head>
+  <body>
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1>
+      <div class="inter">
+        <div class="names">
+          Amount
+          <br />
+          Interes Rate
+          <br />
+          No. of Years
+        </div>
+        <div class="inputs">
+          <input type="number" id="principal" /> <br />
+          <input
+            type="range"
+            id="rate"
+            min="minval"
+            max="maxval"
+            value="default_val"
+            onchange="updateRate()"
+          />
+          <span id="rate_val"> 10.25% </span>
+          <br />
+          <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <!-- fill in the rest of the values-->
+          </select>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="butres">
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result"></span>
+      </div>
+      <br />
+      <footer>
+        &#169; This Calculator belongs to
+        <a
+          href="http://akhlak-hossain-jim.github.io/"
+          target="blank"
+          rel="noopener"
+          >Akhlak Hossain Jim</a
+        >
+      </footer>
+    </div>
+  </body>
 </html>
