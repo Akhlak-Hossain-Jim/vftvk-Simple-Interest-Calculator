@@ -3,14 +3,14 @@ function compute() {
   var rate = document.getElementById("rate").value;
   var years = document.getElementById("years").value;
 
-  if (principal == "") {
-    alert("Please enter the principal");
+  if (principal <= 0) {
+    alert("Please enter the principal in positive value");
     username.focus();
     return false;
   }
 
-  if (rate == 0) {
-    alert("Please enter the rate");
+  if (rate <= 0) {
+    alert("Please enter the rate in positive value");
     username.focus();
     return false;
   } else {
