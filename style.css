@@ -33,3 +33,8 @@ footer a {
 .butres {
     margin-left: 10px;
 }
+
+#rate:focus {
+    border: 1px solid gray;
+    outline: 1px solid gray;
+}
