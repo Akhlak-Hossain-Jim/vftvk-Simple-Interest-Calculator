@@ -38,3 +38,7 @@ footer a {
     border: 1px solid gray;
     outline: 1px solid gray;
 }
+
+input {
+    border-radius: 8px;
+}
