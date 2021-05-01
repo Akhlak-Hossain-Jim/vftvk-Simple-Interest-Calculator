@@ -1,7 +1,9 @@
 body {
     background-color:black;
     font-family:arial;
-    color:white
+    color:white;
+    display: grid;
+    place-items: center;
 }
 h1{
     color:grey;
